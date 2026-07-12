@@ -10,15 +10,22 @@
 <body>
     <div class="container">
         <h1>전역일까지</h1>
-        <div class="countdown">
-            <div id="days" class="time-unit"></div>
-            <div class="time-label">Days Left</div>
+        <div id="countdown-section">
+            <div class="countdown">
+                <div id="days" class="time-unit"></div>
+                <div class="time-label">Days Left</div>
+            </div>
+            <div class="percentage">
+                <div id="percent" class="percent-unit"></div><div class="percent-unit">%</div>
+            </div>
+            <div class="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+            </div>
         </div>
-        <div class="percentage">
-            <div id="percent" class="percent-unit"></div><div class="percent-unit">%</div>
-        </div>
-        <div class="progress-container">
-            <div class="progress-bar" id="progress-bar"></div>
+        <div id="completion-message" class="completion-message" style="display: none;">
+            <div class="completion-text">✓</div>
+            <div class="completion-title">복무만료</div>
+            <div class="completion-subtitle">산업기능요원 복무만료하였습니다</div>
         </div>
     </div>
     <script src="script.js"></script>

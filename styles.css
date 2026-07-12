@@ -60,6 +60,47 @@ h1 {
     transition: width 0.4s ease;
 }
 
+.completion-message {
+    animation: fadeIn 0.8s ease-in-out;
+    padding: 40px 20px;
+}
+
+.completion-text {
+    font-size: 5rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+}
+
+.completion-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.completion-subtitle {
+    font-size: 1.5rem;
+    color: #777;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
 @media (max-width: 600px) {
     h1 {
         font-size: 1.8rem;
@@ -70,6 +111,18 @@ h1 {
     }
 
     .time-label {
+        font-size: 1rem;
+    }
+    
+    .completion-text {
+        font-size: 3rem;
+    }
+    
+    .completion-title {
+        font-size: 2rem;
+    }
+    
+    .completion-subtitle {
         font-size: 1rem;
     }
 }
